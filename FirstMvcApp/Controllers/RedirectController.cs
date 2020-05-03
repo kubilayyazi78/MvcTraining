@@ -36,7 +36,7 @@ namespace FirstMvcApp.Controllers
                 { "id","6"}
             });*/
 
-            return RedirectToRoute("Default",new {controller="View",action ="Index2"});
+            return RedirectToRoute( "Default",new {controller="View",action ="Index2"});
         }
     }
 } 
