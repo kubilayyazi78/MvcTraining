@@ -95,6 +95,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HttpController.cs" />
     <Compile Include="Controllers\JavascriptController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
     <Compile Include="Controllers\RedirectController.cs" />
@@ -115,6 +116,7 @@
     <Content Include="Views\Content\Index.cshtml" />
     <Content Include="Views\Json\Index.cshtml" />
     <Content Include="Views\Javascript\Index.cshtml" />
+    <Content Include="Views\Http\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
