@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\CustomController.cs" />
     <Compile Include="Controllers\EmptyController.cs" />
     <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -121,6 +122,7 @@
     <Content Include="Views\Http\Index.cshtml" />
     <Content Include="Views\File\Index3.cshtml" />
     <Content Include="Views\Empty\Index.cshtml" />
+    <Content Include="Views\Custom\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
