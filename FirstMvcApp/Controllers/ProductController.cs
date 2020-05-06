@@ -33,19 +33,20 @@ namespace FirstMvcApp.Controllers
         }
     }
     public class ProductController : Controller
-    {
+    {   [HttpGet]
         public ViewResult Index()
         {
             return View();
         }
-        [ActionLength(3)]
-        [ActionName("abc")]
+        [ActionLength(5)]
+        //[ActionName("Index")]
         public ActionResult Test()
         {
             return View("Test");
         }
         // GET: Json
         [AjaxMethod]
+        [ActionLength(10)]
         public JsonResult GetAll()
         {
             var products = new List<Category>
