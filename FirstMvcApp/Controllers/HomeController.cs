@@ -23,5 +23,18 @@ namespace FirstMvcApp.Controllers
         {
             return View("Index");
         }
+        [AcceptVerbs(HttpVerbs.Get)]
+        public ActionResult IndexView2()
+        {
+            return View("Index");
+        }
+
+       // [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Post)]
+        [HttpPost]
+        [AcceptVerbs("Get","Post")]
+        public ActionResult IndexView3()
+        {
+            return View("Index");
+        }
     }
 }
