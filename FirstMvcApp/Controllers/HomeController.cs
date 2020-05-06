@@ -13,15 +13,15 @@ namespace FirstMvcApp.Controllers
         {
             return "Başlangıc";
         }
-
+        [NonAction]
         public string Merhaba()
         {
             return "Sonuc";
         }
-
+        [ActionName("IndexDemo")]
         public ActionResult IndexView()
         {
-            return View();
+            return View("Index");
         }
     }
 }
