@@ -19,11 +19,30 @@ namespace FirstMvcApp.Controllers
             return controllerContext.HttpContext.Request.IsAjaxRequest();
         } 
     }
+
+    public class ActionLengthAttribute : ActionNameSelectorAttribute
+    {
+        private readonly int _length;
+        public ActionLengthAttribute(int length)
+        {
+            _length = length;
+        }
+        public override bool IsValidName(ControllerContext controllerContext, string actionName, MethodInfo methodInfo)
+        {
+            return actionName.Length <= _length;
+        }
+    }
     public class ProductController : Controller
     {
         public ViewResult Index()
         {
             return View();
+        }
+        [ActionLength(3)]
+        [ActionName("abc")]
+        public ActionResult Test()
+        {
+            return View("Test");
         }
         // GET: Json
         [AjaxMethod]
