@@ -4,7 +4,7 @@
 }
 
 @{ 
-    var a = 5;
+    var a = 6;
     var b = 10;
 
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
@@ -16,9 +16,24 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <style>
+        
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <div> 
+
+    @{ 
+        var cssClass = b % a == 0 ? "red" : "blue";
+    }
+
+
+    <div class="@cssClass"> 
         @a
         <br />
         @b
@@ -40,7 +55,7 @@
         {
             var total = a + b;
 
-            <div> @total</div> 
+            <div class="blue"> @total</div> 
         }
         <br />
 
