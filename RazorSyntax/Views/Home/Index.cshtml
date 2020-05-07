@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+@{ 
+    var a = 5;
+    var b = 10;
+
+    var numbers = new List<int> { 1, 2, 3, 4, 5 };
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @a
+        <br />
+        @b
+        <br />
+        @foreach(var number in numbers)
+        {
+            @number
+            <br />
+        }
+
+        @for (int i = 0; i < 3; i++)
+        {
+            <text> Kubilay </text>
+
+            @: Kubilay
+        }
+
+        @if (true)
+        {
+            var total = a + b;
+
+            <div> @total</div> 
+        }
+        <br />
+
+        Total: @a+@b
+        <br />
+        Total : @(a+b)
+        <br />
+        kubi@yazihotmail.com
+        <br />
+        kubi@(a)
+    </div>
+</body>
+</html>
