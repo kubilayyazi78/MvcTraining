@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMvcApp", "FirstMvcApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorSyntax", "RazorSyntax\RazorSyntax.csproj", "{258E1B03-AA6B-47A0-871D-23CE33C5AC1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinding", "ModelBinding\ModelBinding.csproj", "{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{258E1B03-AA6B-47A0-871D-23CE33C5AC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258E1B03-AA6B-47A0-871D-23CE33C5AC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{258E1B03-AA6B-47A0-871D-23CE33C5AC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
