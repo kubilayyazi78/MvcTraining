@@ -16,8 +16,17 @@ namespace ModelBinding.Controllers
             var categoryId = RouteData.Values["categoryId"];
             var name = RouteData.Values["name"];
 
+            var lastName = Request.QueryString["lastName"];
+            var productId = Request.QueryString["productId"];
 
-            return Content(string.Format("Controller : {0} -  Action {1}",controller,action));
+            //  return Content(string.Format("Controller : {0} -  Action {1}",controller,action));
+
+            return RedirectToAction("Index2", new { controller = "Home", categoryId = 10, name = "Kubilay", fullName = "Kubilay YAZİ" });
+        }
+
+        public ActionResult Index2()
+        {
+            return new EmptyResult();
         }
     }
 }
