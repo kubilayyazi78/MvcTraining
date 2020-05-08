@@ -13,7 +13,8 @@ namespace ModelBinding.Controllers
         {
             var controller = RouteData.Values["controller"];
             var action = RouteData.Values["action"];
-            var id = RouteData.Values["id"];
+            var categoryId = RouteData.Values["categoryId"];
+            var name = RouteData.Values["name"];
 
 
             return Content(string.Format("Controller : {0} -  Action {1}",controller,action));
