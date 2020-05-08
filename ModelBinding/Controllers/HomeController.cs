@@ -24,7 +24,7 @@ namespace ModelBinding.Controllers
             return RedirectToAction("Index2", new { controller = "Home", categoryId = 10, name = "Kubilay", fullName = "Kubilay YAZİ" });
         }
 
-        public ActionResult Index2()
+        public ActionResult Index2(string controller,string action,int id )
         {
             return new EmptyResult();
         }
