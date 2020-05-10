@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>
+
+@using (Html.BeginForm("Index","Home",FormMethod.Get))
+{
+    @Html.Label("ProductName","Product Name")
+
+    @Html.TextBox("ProductName","",new { placeHolder="Enter Pro",@class="form-control"})
+
+    @Html.DropDownList("categoryId")
+
+    @Html.TextArea("PerUnit","",5,1,new { } )
+}

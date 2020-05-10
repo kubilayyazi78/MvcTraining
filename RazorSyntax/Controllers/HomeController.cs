@@ -13,5 +13,10 @@ namespace RazorSyntax.Controllers
         {
             return View("Index5");
         }
+
+        public ActionResult Index2()
+        {
+            return View();
+        }
     }
 }
