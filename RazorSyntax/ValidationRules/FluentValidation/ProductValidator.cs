@@ -12,9 +12,12 @@ namespace RazorSyntax.ValidationRules.FluentValidation
         public ProductValidator()
         {
             RuleFor(t => t.ProductName).NotEmpty();
-            RuleFor(t => t.CategoryId).GreaterThan(0).WithMessage("Select");
+           //clientside uygun değil RuleFor(t => t.CategoryId).GreaterThan(0).WithMessage("Select");
             RuleFor(t => t.QuantityPerUnit).NotEmpty().Length(3, 10);
-            RuleFor(t => t.UnitPrice).GreaterThan(5);
+            //yerine   RuleFor(t => t.UnitPrice).GreaterThan(5);
+
+            RuleFor(t => t.UnitPrice).InclusiveBetween(5, int.MaxValue)
+                .WithMessage("5den büyük olmalı");
         }
     }
 }
