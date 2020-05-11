@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelBinding.ModelBinders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace ModelBinding
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+          //   System.Web.Mvc.ModelBinders.Binders.DefaultBinder = new CustomDefaultModelBinder();
         }
     }
 }

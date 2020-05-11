@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,9 +15,16 @@ namespace RazorSyntax
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-          //  ModelValidatorProviders.Providers.Clear();
+            //  ModelValidatorProviders.Providers.Clear();
 
             //DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes = false;
+
+            ModelValidatorProviders.Providers.Clear();
+
+            ModelValidatorProviders.Providers.Add(new FluentValidationModelValidatorProvider
+            {
+                AddImplicitRequiredValidator = false
+            });
         }
     }
 }
