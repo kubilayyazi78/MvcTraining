@@ -13,6 +13,10 @@ namespace RazorSyntax
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+          //  ModelValidatorProviders.Providers.Clear();
+
+            //DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes = false;
         }
     }
 }
