@@ -8,7 +8,7 @@ using System.Web;
 namespace RazorSyntax.Models.Entities
 {   [FluentValidation.Attributes.Validator(typeof(ProductValidator))]
     public class Product
-    {
+    {    [Display(Name ="İsim")]
         //[Required]
         public string ProductName { get; set; }
         //[Required(ErrorMessage ="Zorunlu")]
@@ -17,5 +17,7 @@ namespace RazorSyntax.Models.Entities
         public string QuantityPerUnit { get; set; }
        // [Range(0,100)]
         public decimal UnitPrice { get; set; }
+       // [UIHint("Date")]
+        public DateTime? BirthDay { get; set; }
     }
 }
