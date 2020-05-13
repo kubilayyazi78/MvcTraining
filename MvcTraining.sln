@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorSyntax", "RazorSyntax\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBinding", "ModelBinding\ModelBinding.csproj", "{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.csproj", "{9FC649C3-8F5E-44DA-B85D-AB86797C574D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0F6C4F5-F9BE-4768-BF2E-F514D2F3AF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC649C3-8F5E-44DA-B85D-AB86797C574D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC649C3-8F5E-44DA-B85D-AB86797C574D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC649C3-8F5E-44DA-B85D-AB86797C574D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC649C3-8F5E-44DA-B85D-AB86797C574D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
