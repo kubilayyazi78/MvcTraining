@@ -47,6 +47,12 @@ namespace Routing
 
                 );
 
+            ///////////// route attribute
+            ///
+
+            routes.MapMvcAttributeRoutes();
+
+
 
 
 
