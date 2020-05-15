@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Filtering.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
@@ -15,6 +16,8 @@ namespace Filtering
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            GlobalFilters.Filters.Add(new AuthorizationFilterC("Global") {  Order=3});
 
             GlobalFilters.Filters.Add(new HandleErrorAttribute{
                 View="Error" 

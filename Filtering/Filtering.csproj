@@ -95,6 +95,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Filters\AuthorizationFilterA.cs" />
+    <Compile Include="Filters\AuthorizationFilterB.cs" />
+    <Compile Include="Filters\AuthorizationFilterC.cs" />
     <Compile Include="Filters\CustomFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -110,6 +114,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Account\Cache.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
