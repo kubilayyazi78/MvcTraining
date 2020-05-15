@@ -27,5 +27,14 @@ namespace Filtering.Controllers
         {
             return View();
         }
+       // [HandleError]
+        public ActionResult Update()
+        {
+
+            var i = 0;
+            var d = 100 / i;
+
+            return View();
+        }
     }
 }

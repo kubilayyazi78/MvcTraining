@@ -104,6 +104,8 @@
     <None Include="packages.config" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Insert.cshtml" />
+    <Content Include="Views\Account\Update.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

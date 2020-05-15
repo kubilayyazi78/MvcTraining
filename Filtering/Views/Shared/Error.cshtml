@@ -1,0 +1,22 @@
+﻿@model HandleErrorInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div>
+        @Model.Exception.Message
+        <br />
+        <pre> 
+        @Model.Exception.StackTrace
+       </pre>
+    </div>
+</body>
+</html>
