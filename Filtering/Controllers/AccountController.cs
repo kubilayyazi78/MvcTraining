@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace Filtering.Controllers
 {
@@ -34,6 +35,17 @@ namespace Filtering.Controllers
             var i = 0;
             var d = 100 / i;
 
+            return View();
+        }
+        [OutputCache(Duration =10,Location =OutputCacheLocation.Client )]
+        public ActionResult Cache()
+        {
+            return View();
+        }
+        [OutputCache(CacheProfile ="CacheProfile")]
+        //[OutputCache(Duration =360,VaryByParam ="id;name")]
+        public ActionResult Cache2(int id, string name)
+        {
             return View();
         }
     }

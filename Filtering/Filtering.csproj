@@ -106,6 +106,7 @@
     <Content Include="Views\Account\Insert.cshtml" />
     <Content Include="Views\Account\Update.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Account\Cache.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
