@@ -9,6 +9,7 @@ namespace Filtering.Controllers
     public class AccountController : Controller
     {
         // GET: Account
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
@@ -19,6 +20,12 @@ namespace Filtering.Controllers
             var model = "Belhanda";
 
             return Content(string.Format("<b>Welcome {0}", model));
+        }
+        [Authorize(Users ="kubi")]
+        [Authorize(Roles ="Admin")]
+        public ActionResult Insert()
+        {
+            return View();
         }
     }
 }
