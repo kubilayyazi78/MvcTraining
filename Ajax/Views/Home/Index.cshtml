@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+
+    var insertAjaxOptions = new AjaxOptions
+    {
+         AllowCache=false,
+         Url=Url.Action("Home"),
+         HttpMethod="GET",
+         UpdateTargetId="tblUser",
+         InsertionMode =InsertionMode.Replace,
+         LoadingElementId="id",
+         LoadingElementDuration=500,
+         Confirm="Emin Misiniz",
+         OnBegin="onbegin",
+         OnComplete="oncomplete",
+         OnFailure="onfailure",
+         OnSuccess="onsuccess(this)"
+    };
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<body>
+    @using (Ajax.BeginForm(insertAjaxOptions))
+    { 
+    <div id="tblUser"> 
+        <div>User</div>
+    </div>
+    }
+</body>
+</html>
+<script>
+    function OnBegin() {
+        alert("onbegin")
+    }
+
+    function OnComplete() {
+        alert("oncomplete")
+    }
+
+    function OnFailure() {
+        alert("onfailure")
+    }
+
+    function OnSuccess(btn) {
+      //  alert("onsuccess")
+
+        $(btn).closest("tr").remove();
+    }
+</script>
