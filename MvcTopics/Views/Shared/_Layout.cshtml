@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-1.8.0.min.js"></script>
+    @RenderSection("scripts",false) 
+
+    <div>
+        @RenderSection("page",true)
+    </div>
+</body>
+</html>
