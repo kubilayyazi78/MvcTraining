@@ -140,6 +140,7 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Content\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Sub\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
