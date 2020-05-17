@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+    <div> 
+        <td><input type="checkbox" name="ids" value="product.id"/></td>
+        <table class="table">
+            <tfoot>
+                <tr>
+                    <td colspan="6"><input type="submit" value="Delete" class="btn btn-danger pull-right" onclick="return confirm("Emin misin ?")" /></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    }
+</body>
+</html>
