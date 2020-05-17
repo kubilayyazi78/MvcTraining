@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Multiple.Selectors;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,7 @@ namespace Multiple.Controllers
         {
             return View();
         }
-
+        [MultipleAction]
         public ActionResult Delete(List<int> ids)
         {
             //using ile veri tabanı bağlantısı new leyerek nort
@@ -28,6 +29,23 @@ namespace Multiple.Controllers
             }
             //}
             return RedirectToAction("Index");
+        }
+        [MultipleAction]
+        public ActionResult Export(List<int> ids)
+        {
+            // List<Product> products
+
+            //  using (var context new Nortwind()){
+
+            //   products=context.Products
+            //     .where(t=>ids.Contains(t.product.id))
+            //   .tolist()
+
+
+
+
+            //            }
+            return Json(ids, JsonRequestBehavior.AllowGet);//ids yerine products
         }
 
         
