@@ -1,6 +1,7 @@
 ﻿using Multiple.Selectors;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -46,6 +47,18 @@ namespace Multiple.Controllers
 
             //            }
             return Json(ids, JsonRequestBehavior.AllowGet);//ids yerine products
+        }
+
+        public ActionResult Insert(int product , HttpPostedFile file)
+        {
+            if (file!=null && file.ContentLength>0)
+            {
+                var fileName = Path.GetFileName(file.FileName);
+                var path = Path.Combine(Server.MapPath("~/contenct/files"), fileName);
+
+                file.SaveAs(path);
+            }
+            return View();
         }
 
         

@@ -11,7 +11,7 @@
     <title>Index</title>
 </head>
 <body>
-    @using (Html.BeginForm("MultpleAction","Home"))
+    @using (Html.BeginForm("MultpleAction","Home",new { enctype="multipart/form-data"}))
     {
     <div> 
         <td><input type="checkbox" name="ids" value="product.id"/></td>
@@ -21,10 +21,12 @@
                     <td colspan="6"><input type="submit" name="delete" value="Delete" class="btn btn-danger pull-right" onclick="return confirm("Emin misin ?")" />
                     <input type="submit" value="Export" name="export" class="btn btn-info" />
                     </td>
-                     
-                </tr>
+                                     </tr>
             </tfoot>
         </table>
+        <div>
+            <input type="file" name="file" />
+        </div>
     </div>
     }
 </body>
